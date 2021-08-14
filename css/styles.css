@@ -1,3 +1,42 @@
+/* Description: Master CSS file */
+
+
+/*****************************************
+Table Of Contents:
+- General Styles
+- Navigation
+- Header
+- Statistics
+- Introduction
+- Services
+- Invitation
+- Contact
+- Footer
+- Copyright
+- Back To Top Button
+- Extra Pages
+- Media Queries
+******************************************/
+
+
+/*****************************************
+Colors:
+- Backgrounds - light gray #f9fafe
+- Headings text - black #191e47
+- Body text - dark gray #6c717b
+- Buttons, icons - blue #4555d2
+- Buttons, icons, bullets - red #cc2973
+******************************************/
+
+
+/**************************/
+
+
+/*     General Styles     */
+
+
+/**************************/
+
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
 
 /* font-family: 'Nanum Gothic Coding', monospace; */
@@ -133,9 +172,11 @@ a:hover {
 .btn-solid-lg {
     display: inline-block;
     padding: 1.625rem 2.625rem 1.625rem 2.625rem;
-    border: 1px solid #4555d2;
-    border-radius: 30px;
-    background-color: #4555d2;
+    /* border: 1px solid #4555d2; */
+    border: 1px solid #1d1d21;
+    /* border-radius: 30px; */
+    background-color: #1d1d21;
+    box-shadow: rgba(0, 0, 0, 0.15) 9px 9px 2.6px;
     color: #ffffff;
     font-weight: 600;
     font-size: 0.875rem;
@@ -146,7 +187,7 @@ a:hover {
 
 .btn-solid-lg:hover {
     background-color: transparent;
-    color: #4555d2;
+    color: #1d1d21;
     /* needs to stay here because of the color property of a tag */
     text-decoration: none;
 }
@@ -348,10 +389,16 @@ code {
 }
 
 .navbar .nav-item.dropdown.show .nav-link,
-.navbar .nav-item .nav-link:hover,
 .navbar .nav-item .nav-link.active {
-    color: #4555d2;
-    text-decoration: underline;
+    border-bottom: 2px solid #191e47;
+    width: 50%;
+    padding-left: 0;
+    transition: 0.5s;
+}
+
+.navbar .nav-item .nav-link:hover {
+    border-bottom: 2px solid #191e47;
+    transition: 0.5s;
 }
 
 .navbar .dropdown .dropdown-menu {
@@ -415,22 +462,6 @@ code {
     text-align: center;
 }
 
-.header .decoration-star {
-    position: absolute;
-    top: 80px;
-    left: -100px;
-    width: 200px;
-    opacity: 0.7;
-}
-
-.header .decoration-star-2 {
-    position: absolute;
-    top: 80px;
-    right: -100px;
-    width: 200px;
-    opacity: 0.7;
-}
-
 .header div[class*="col"] {
     position: relative;
 }
@@ -452,9 +483,371 @@ code {
     margin-left: 0.25rem;
 }
 
-.header .image-container img {
-    width: 70%;
+.header .image-container {
+    margin-top: 5rem;
 }
+
+.counter {
+    padding-top: 4.5rem;
+    padding-bottom: 5.5rem;
+    text-align: center;
+}
+
+.counter .counter-cell {
+    margin-bottom: 4rem;
+}
+
+.counter .purecounter {
+    margin-bottom: 1.5rem;
+    color: #191e47;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 2rem;
+}
+
+.counter .counter-info {
+    color: #6d717a;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}
+
+
+/************************/
+
+
+/*     Introduction     */
+
+
+/************************/
+
+.hero {
+    background-color: #1d1d21;
+}
+
+.basic-1 {
+    padding-top: 4.25rem;
+    padding-bottom: 3.75rem;
+}
+
+.basic-1 h2 {
+    color: #ffffff;
+    margin-bottom: 1.75rem;
+}
+
+.basic-1 p#dash {
+    color: #aaaaaa;
+}
+
+.basic-1 p {
+    color: #ffffff;
+}
+
+.basic-1 p#dash:before {
+    display: block;
+    float: left;
+    margin-top: .8em;
+    /* half the line-height */
+    border-top: 2px solid #aaaaaa;
+    width: 10%;
+    content: " ";
+}
+
+
+/********************/
+
+
+/*     Services     */
+
+
+/********************/
+
+.cards-1 {
+    padding-top: 4.5rem;
+    padding-bottom: 3.5rem;
+}
+
+.cards-1 h2 {
+    margin-bottom: 1.75rem;
+}
+
+.cards-1 .text-container {
+    margin-bottom: 5rem;
+    text-decoration: underline;
+}
+
+.cards-1 .list-unstyled {
+    margin-top: 1.5rem;
+}
+
+.cards-1 .list-unstyled .fas {
+    color: #cc2973;
+    font-size: 0.375rem;
+    line-height: 1.625rem;
+}
+
+.cards-1 .list-unstyled .flex-grow-1 {
+    margin-left: 0.5rem;
+}
+
+.cards-1 .card-container {
+    text-align: center;
+}
+
+.cards-1 .card {
+    display: inline-block;
+    margin-right: 1.5rem;
+    margin-bottom: 3.75rem;
+    margin-left: 1.5rem;
+    width: 250px;
+    height: 250px;
+    border: none;
+    border-radius: 50%;
+    background-color: beige;
+    text-align: center;
+    vertical-align: top;
+}
+
+.cards-1 .card-icon {
+    width: 90px;
+    height: 90px;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    border-radius: 50%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.cards-1 .card-icon .far,
+.cards-1 .card-icon .fas {
+    margin-left: 2rem;
+    color: #cc2973;
+    font-size: 3.75rem;
+}
+
+.cards-1 .card-body {
+    padding: 0;
+}
+
+.cards-1 .card-title {
+    font-weight: 600;
+}
+
+
+/**********************/
+
+
+/*     Invitation     */
+
+
+/**********************/
+
+.basic-4 {
+    padding-top: 9.25rem;
+    padding-bottom: 9.75rem;
+    text-align: center;
+}
+
+.basic-4 h4 {
+    margin-bottom: 2rem;
+}
+
+
+/*******************/
+
+
+/*     Contact     */
+
+
+/*******************/
+
+.form-1 {
+    position: relative;
+    overflow: hidden;
+    padding-top: 9.5rem;
+    padding-bottom: 8.75rem;
+    text-align: center;
+}
+
+.form-1 div[class*="col"] {
+    /* selects all elements which have classes starting with col */
+    /* needed so that the absolute positioned decoration stays behind */
+    position: relative;
+}
+
+.form-1 .container {
+    padding: 1.5rem;
+    box-shadow: 0 3.5px 5.5px 0 rgba(0, 0, 0, 0.32);
+}
+
+.form-1 .image-container .contact-address {
+    width: 275.5px;
+    height: 365.5px;
+    margin: 75.5px 452.5px 75.5px 0;
+    padding: 48.5px 28.5px 128.5px 54.5px;
+    background-color: #1a1a1a;
+    margin-bottom: 5rem;
+}
+
+
+/*********************/
+
+
+/*     Copyright     */
+
+
+/*********************/
+
+.copyright {
+    padding-bottom: 1rem;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.copyright p,
+.copyright a {
+    text-decoration: none;
+}
+
+
+/******************************/
+
+
+/*     Back To Top Button     */
+
+
+/******************************/
+
+#myBtn {
+    position: fixed;
+    z-index: 99;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    width: 52px;
+    height: 52px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    background-color: #44434a;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background-color: #1d1d21;
+}
+
+#myBtn img {
+    margin-bottom: 0.25rem;
+    width: 18px;
+}
+
+
+/***********************/
+
+
+/*     Extra Pages     */
+
+
+/***********************/
+
+.ex-header {
+    padding-top: 8.5rem;
+    padding-bottom: 4rem;
+}
+
+.ex-basic-1 .list-unstyled .fas {
+    color: #cc2973;
+    font-size: 0.375rem;
+    line-height: 1.625rem;
+}
+
+.ex-basic-1 .list-unstyled .flex-grow-1 {
+    margin-left: 0.5rem;
+}
+
+.ex-basic-1 .text-box {
+    padding: 1.25rem 1.25rem 0.5rem 1.25rem;
+    background-color: #f9fafe;
+}
+
+.ex-cards-1 .card {
+    border: none;
+    background-color: transparent;
+}
+
+.ex-cards-1 .card .fa-stack {
+    width: 2em;
+    font-size: 1.125rem;
+}
+
+.ex-cards-1 .card .fa-stack-2x {
+    color: #cc2973;
+}
+
+.ex-cards-1 .card .fa-stack-1x {
+    width: 2em;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 2.125rem;
+}
+
+.ex-cards-1 .card .list-unstyled .flex-grow-1 {
+    margin-left: 2.25rem;
+}
+
+.ex-cards-1 .card .list-unstyled .flex-grow-1 h5 {
+    margin-top: 0.125rem;
+    margin-bottom: 0.5rem;
+}
+
+
+/*************************/
+
+
+/*     Media Queries     */
+
+
+/*************************/
+
+
+/* Min-width 768px */
+
+@media (min-width: 768px) {
+    /* Header */
+    .header {
+        padding-top: 11rem;
+        padding-bottom: 5em;
+    }
+    /* end of header */
+    /* Statistics */
+    .counter .counter-cell {
+        display: inline-block;
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+        vertical-align: top;
+    }
+    /* end of statistics */
+    /* Services */
+    .cards-1 .card {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+    /* end of services */
+    /* Contact */
+    /* end of contact */
+    /* Extra Pages */
+    .ex-basic-1 .text-box {
+        padding: 1.75rem 2rem 0.875rem 2rem;
+    }
+    /* end of extra pages */
+}
+
+
+/* end of min-width 768px */
+
+
+/* Min-width 992px */
 
 @media (min-width: 992px) {
     /* General Styles */
@@ -547,108 +940,131 @@ code {
         line-height: 4rem;
     }
     /* end of statistics */
-}
-
-.counter {
-    padding-top: 4.5rem;
-    padding-bottom: 5.5rem;
-    text-align: center;
-}
-
-.counter .counter-cell {
-    margin-bottom: 4rem;
-}
-
-.counter .purecounter {
-    margin-bottom: 1.5rem;
-    color: #191e47;
-    font-weight: 400;
-    font-size: 4rem;
-    line-height: 2rem;
-}
-
-.counter .counter-info {
-    color: #6d717a;
-    font-size: 0.875rem;
-    line-height: 1.5rem;
-}
-
-
-/*******************/
-
-
-/*     Contact     */
-
-
-/*******************/
-
-.form-1 {
-    position: relative;
-    overflow: hidden;
-    padding-top: 9.5rem;
-    padding-bottom: 8.75rem;
-    text-align: center;
-}
-
-.form-1 .decoration-star {
-    position: absolute;
-    top: 600px;
-    left: -100px;
-    width: 200px;
-    opacity: 0.7;
-}
-
-.form-1 .decoration-star-2 {
-    position: absolute;
-    top: 600px;
-    right: -100px;
-    width: 200px;
-    opacity: 0.7;
-}
-
-.form-1 div[class*="col"] {
-    /* selects all elements which have classes starting with col */
-    /* needed so that the absolute positioned decoration stays behind */
-    position: relative;
-}
-
-.form-1 .image-container {
-    margin-bottom: 5rem;
-}
-
-.form-1 h2 {
-    margin-bottom: 2.5rem;
+    /* Introduction */
+    .basic-1 h2 {
+        width: 90%;
+    }
+    /* end of introduction */
+    /* Services */
+    .cards-1 .text-container {
+        margin-bottom: 0;
+    }
+    /* end of services */
+    /* Invitation */
+    .basic-4 h4 {
+        width: 48rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    /* end of invitation */
+    /* Contact */
+    .form-1 {
+        text-align: left;
+    }
+    .form-1 .image-container {
+        margin-bottom: 0;
+    }
+    /* end of contact */
+    /* Extra Pages */
+    .ex-cards-1 .card {
+        display: inline-block;
+        width: 296px;
+        vertical-align: top;
+    }
+    .ex-cards-1 .card:nth-of-type(3n+2) {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    /* end of extra pages */
 }
 
 
-/******************************/
+/* end of min-width 992px */
 
 
-/*     Back To Top Button     */
+/* Min-width 1200px */
 
-
-/******************************/
-
-#myBtn {
-    position: fixed;
-    z-index: 99;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    width: 52px;
-    height: 52px;
-    border: none;
-    border-radius: 50%;
-    outline: none;
-    background-color: #44434a;
-    cursor: pointer;
+@media (min-width: 1200px) {
+    /* General Styles */
+    .container {
+        max-width: 1140px;
+    }
+    /* end of general styles */
+    /* Header */
+    .header {
+        padding-top: 12rem;
+        padding-bottom: 6rem;
+    }
+    .header .text-container {
+        margin-top: 6.5rem;
+    }
+    .header .h1-large {
+        font-size: 4.25rem;
+        line-height: 4.875rem;
+    }
+    .header .image-container {
+        text-align: right;
+    }
+    /* end of header */
+    /* Statistics */
+    .counter .counter-cell {
+        margin-right: 3.5rem;
+        margin-left: 3.5rem;
+        width: 180px;
+    }
+    .counter .counter-cell:first-of-type {
+        margin-left: 0;
+    }
+    .counter .counter-cell:last-of-type {
+        margin-right: 0;
+    }
+    .counter .purecounter {
+        font-size: 6.75rem;
+        line-height: 4.5rem;
+    }
+    /* end of statistics */
+    /* Services */
+    .cards-1 .text-container {
+        margin-top: 2rem;
+        margin-right: 4.75rem;
+    }
+    .cards-1 .card {
+        margin-right: 2.25rem;
+        margin-left: 2.25rem;
+    }
+    .cards-1 .card:nth-of-type(3n+1) {
+        margin-left: 0;
+    }
+    .cards-1 .card:nth-of-type(3n+3) {
+        margin-right: 0;
+    }
+    /* end of services */
+    /* Contact */
+    .form-1 .text-container {
+        margin-left: 2.5rem;
+    }
+    .form-1 h2 {
+        width: 82%;
+    }
+    /* end of contact */
+    /* Extra Pages */
+    .ex-cards-1 .card {
+        width: 336px;
+    }
+    .ex-cards-1 .card:nth-of-type(3n+2) {
+        margin-right: 2.875rem;
+        margin-left: 2.875rem;
+    }
+    /* end of extra pages */
 }
 
-#myBtn:hover {
-    background-color: #1d1d21;
-}
 
-#myBtn img {
-    margin-bottom: 0.25rem;
-    width: 18px;
+/* end of min-width 1200px */
+
+
+/* Min-width 1400px */
+
+@media (min-width: 1400px) {
+    /* Header */
+    /* end of header */
 }
