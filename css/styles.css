@@ -634,6 +634,44 @@ code {
 }
 
 
+/********************/
+
+
+/*     Team     */
+
+
+/********************/
+
+.cards-12 {
+    padding-top: 4.5rem;
+    padding-bottom: 3.5rem;
+    margin: 0 auto;
+}
+
+.cards-12 p#dash {
+    color: #aaaaaa;
+}
+
+.cards-12 p#dash:before {
+    display: block;
+    float: left;
+    margin-top: .8em;
+    /* half the line-height */
+    border-top: 2px solid #aaaaaa;
+    width: 10%;
+    content: " ";
+}
+
+.cards-12 .card {
+    margin: 28px;
+    align-items: center;
+}
+
+.cards-12 .card p {
+    text-align: left;
+}
+
+
 /**********************/
 
 
@@ -681,32 +719,119 @@ code {
 }
 
 .form-1 .image-container .contact-address {
-    width: 275.5px;
-    height: 365.5px;
-    margin: 75.5px 452.5px 75.5px 0;
-    padding: 48.5px 28.5px 128.5px 54.5px;
+    width: 100%;
+    height: 385.5px;
+    margin: 0;
+    padding: 48.5px;
     background-color: #1a1a1a;
-    margin-bottom: 5rem;
-}
-
-
-/*********************/
-
-
-/*     Copyright     */
-
-
-/*********************/
-
-.copyright {
-    padding-bottom: 1rem;
+    z-index: 9;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    opacity: 0.9;
 }
 
-.copyright p,
-.copyright a {
+.form-1 .image-container .contact-address h3,
+a {
+    color: #ffffff;
+    display: block;
+    text-align: left;
+    line-height: 3.4;
+    padding: 2px;
     text-decoration: none;
+}
+
+.form-1 .image-container .contact-address a:hover {
+    text-decoration: underline;
+}
+
+.form-1 .text-container {
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+}
+
+.form-1 .text-container h2 {
+    text-align: center;
+}
+
+
+/******************/
+
+
+/*     Footer     */
+
+
+/******************/
+
+footer {
+    background-color: #1a1a1a;
+}
+
+.footer {
+    padding-top: 6.5rem;
+    padding-bottom: 2rem;
+}
+
+.footer a {
+    color: #aaaaaa;
+    text-decoration: none;
+}
+
+.footer p {
+    color: #fcfcfc;
+    text-decoration: none;
+}
+
+.footer h1 {
+    color: #ffffff;
+}
+
+.footer p:hover,
+.footer a:hover {
+    color: #ffffff;
+}
+
+.footer li {
+    margin-bottom: 0.375rem;
+}
+
+.footer .nav li {
+    padding: 12px;
+}
+
+.footer .social-icons li {
+    margin: 8px;
+}
+
+.footer .social-icons li a {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ddd;
+    /* add border to the buttons */
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 2.4em;
+    border-radius: 27px;
+    -moz-border-radius: 27px;
+    -webkit-border-radius: 27px;
+    transition: 0.5s;
+}
+
+.footer .social-icons li:hover a {
+    color: #1a1a1a;
+    background-color: #ffffff;
+    transition: 0.5s;
+}
+
+.footer .footer__copyright {
+    margin-top: 1em;
 }
 
 
@@ -809,6 +934,27 @@ code {
 
 
 /*************************/
+
+
+/* Max-width 345px */
+
+@media (max-width:345px) {
+    .form-1 .image-container .contact-address h3,
+    a {
+        font-size: small;
+    }
+}
+
+
+/* Max-width 768px */
+
+
+/* @media (max-width:600px) {
+    .footer-service li {
+        display: block;
+        background-color: yellowgreen;
+    }
+} */
 
 
 /* Min-width 768px */
@@ -961,6 +1107,32 @@ code {
     .form-1 {
         text-align: left;
     }
+    .form-1 .container {
+        width: 850px;
+    }
+    .form-1 .image-container .contact-address {
+        width: 350.5px;
+        height: 385.5px;
+        margin: 75.5px 452.5px 75.5px -70px;
+        padding: 48.5px 28.5px 128.5px 54.5px;
+        background-color: #1a1a1a;
+        z-index: 9;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .form-1 .image-container .contact-address h3,
+    a {
+        color: #ffffff;
+        display: block;
+        text-align: left;
+        line-height: 3.4;
+        padding: 2px;
+        text-decoration: none;
+    }
+    .form-1 .image-container .contact-address a:hover {
+        text-decoration: underline;
+    }
     .form-1 .image-container {
         margin-bottom: 0;
     }
@@ -1042,9 +1214,6 @@ code {
     /* Contact */
     .form-1 .text-container {
         margin-left: 2.5rem;
-    }
-    .form-1 h2 {
-        width: 82%;
     }
     /* end of contact */
     /* Extra Pages */
