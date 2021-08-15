@@ -333,6 +333,10 @@ code {
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
 }
 
+.navbar .navbar-collapse {
+    margin-top: 1.3rem;
+}
+
 .navbar .navbar-brand {
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
@@ -966,6 +970,9 @@ footer {
         padding-bottom: 5em;
     }
     /* end of header */
+    .navbar .navbar-collapse {
+        margin-top: 0;
+    }
     /* Statistics */
     .counter .counter-cell {
         display: inline-block;
