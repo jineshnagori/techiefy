@@ -67,7 +67,23 @@ if (dropdownCheck !== null) {
 		}
 	});
 }
-  
+
+
+//active
+var active = document.querySelectorAll(".nav-link");
+
+for (var i = 0; i < active.length; i++) {
+    active[i].addEventListener('click', changeClass, false);
+
+}
+
+function changeClass() {
+    var activec = document.querySelector(".active");
+
+    activec.classList.remove("active");
+    this.classList.add("active");
+
+}
 
 /* Card Slider - Swiper */
 var cardSlider = new Swiper('.card-slider', {
