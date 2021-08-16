@@ -1,5 +1,3 @@
-/* Description: Custom JS file */
-
 /* Navigation*/
 // Collapse the navbar by adding the top-nav-collapse class
 window.onscroll = function () {
@@ -103,3 +101,19 @@ function topFunction() {
 	document.body.scrollTop = 0; // for Safari
 	document.documentElement.scrollTop = 0; // for Chrome, Firefox, IE and Opera
 }
+
+$('img.svg-changeable').each(function () {
+	var $e = $(this);
+	var imgURL = $e.prop('src');
+  
+	$.get(imgURL, function (data) {
+	  // Get the SVG tag, ignore the rest
+	  var $svg = $(data).find('svg');
+  
+	  // change the color
+	  $svg.find('path').attr('fill', '#1d1d21');
+  
+	  $e.prop('src', "data:image/svg+xml;base64," + window.btoa($svg.prop('outerHTML')));
+	});
+  
+  });
