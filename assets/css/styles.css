@@ -365,6 +365,111 @@ code {
     color: #000;
 }
 
+
+/********************/
+
+
+/*     Projects     */
+
+
+/********************/
+
+.cards-2 {
+    padding-top: 9.5rem;
+    padding-bottom: 5rem;
+}
+
+.cards-2 .h2-heading {
+    margin-bottom: 3.75rem;
+    text-align: center;
+}
+
+.cards-2 .card {
+    max-width: 350px;
+    margin-right: auto;
+    margin-bottom: 4.5rem;
+    margin-left: auto;
+    border: none;
+}
+
+.cards-2 .card img {
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+.cards-2 .card-body {
+    padding: 0;
+}
+
+
+/************************/
+
+
+/*     Testimonials     */
+
+
+/************************/
+
+.slider-1 {
+    position: relative;
+    padding-top: 9.75rem;
+    padding-bottom: 9.75rem;
+}
+
+.slider-1 .quotes-decoration {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 120px;
+    opacity: 0.2;
+}
+
+.slider-1 .slider-container {
+    position: relative;
+}
+
+.slider-1 .swiper-container {
+    position: static;
+    width: 86%;
+    text-align: center;
+}
+
+.slider-1 .swiper-button-prev:focus,
+.slider-1 .swiper-button-next:focus {
+    /* even if you can't see it chrome you can see it on mobile device */
+    outline: none;
+}
+
+.slider-1 .swiper-button-prev {
+    left: -10px;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23707375'%2F%3E%3C%2Fsvg%3E");
+    background-size: 18px 28px;
+}
+
+.slider-1 .swiper-button-next {
+    right: -10px;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23707375'%2F%3E%3C%2Fsvg%3E");
+    background-size: 18px 28px;
+}
+
+.slider-1 .testimonial-image {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 2.25rem;
+    border-radius: 50%;
+}
+
+.slider-1 .testimonial-text {
+    margin-bottom: 1.75rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+
+.slider-1 .testimonial-author {
+    margin-bottom: 0.25rem;
+    color: #2b2b4f;
+}
+
 .team-item {
     position: relative;
     z-index: 1;
@@ -704,6 +809,16 @@ footer {
         margin-right: auto;
         margin-left: auto;
     }
+    .cards-2 .card {
+        display: inline-block;
+        width: 292px;
+        max-width: 100%;
+        vertical-align: top;
+    }
+    .cards-2 .card:nth-of-type(3n+2) {
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+    }
     .form-1 {
         text-align: left;
     }
@@ -793,6 +908,13 @@ footer {
     }
     .cards-1 .card:nth-of-type(3n+3) {
         margin-right: 0;
+    }
+    .cards-2 .card {
+        width: 350px;
+    }
+    .cards-2 .card:nth-of-type(3n+2) {
+        margin-right: 1.625rem;
+        margin-left: 1.625rem;
     }
     .form-1 .text-container {
         margin-left: 2.5rem;
