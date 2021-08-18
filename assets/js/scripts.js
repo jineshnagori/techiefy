@@ -68,19 +68,6 @@ if (dropdownCheck !== null) {
     });
 }
 
-
-/* Code for changing active 
-           link on clicking */
-var btns = $("#navbar .navbar-nav .nav-link");
-
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-    });
-}
-
 /* Code for changing active 
 link on Scrolling */
 $(window).scroll(function() {
@@ -92,9 +79,3 @@ $(window).scroll(function() {
         }
     });
 }).scroll();
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0; // for Safari
-    document.documentElement.scrollTop = 0; // for Chrome, Firefox, IE and Opera
-}
