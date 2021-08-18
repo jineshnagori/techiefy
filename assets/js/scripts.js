@@ -5,7 +5,7 @@
 //     scrollFunctionBTT(); // back to top button
 // };
 
-window.onload = function() {
+window.onload = function () {
     scrollFunction();
 };
 
@@ -36,7 +36,7 @@ function toggleDropdown(e) {
     let _m = document.querySelector(".dropdown-menu", _d);
 
     setTimeout(
-        function() {
+        function () {
             const shouldOpen = _d.matches(":hover");
             _m.classList.toggle("show", shouldOpen);
             _d.classList.toggle("show", shouldOpen);
@@ -70,9 +70,9 @@ if (dropdownCheck !== null) {
 
 /* Code for changing active 
 link on Scrolling */
-$(window).scroll(function() {
+$(window).scroll(function () {
     var distance = $(window).scrollTop();
-    $('.session').each(function(i) {
+    $('.session').each(function (i) {
         if ($(this).position().top <= distance + 100) {
             $('.navbar-nav a.active').removeClass('active');
             $('.navbar-nav a').eq(i).addClass('active');
