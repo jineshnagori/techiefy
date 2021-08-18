@@ -184,7 +184,6 @@ code {
 
 .navbar .nav-item .nav-link {
   padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
   color: #000;
   text-decoration: none;
   transition: all 0.2s ease;
@@ -192,7 +191,17 @@ code {
 }
 
 .nav-item .active {
-  color: #aaaaaa !important;
+  display: inline-block;
+  padding-bottom: 2px;
+  position: relative;
+}
+
+.nav-item .active::before {
+  content: '';
+  position: absolute;
+  width: 30%;
+  bottom: 0;
+  border-bottom: 1px solid #1d1d21;
 }
 
 .header {
